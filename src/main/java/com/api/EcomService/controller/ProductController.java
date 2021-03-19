@@ -17,7 +17,7 @@ public class ProductController {
 
     @GetMapping("/sayHello")
     public ResponseEntity<String> sayHello(@RequestParam("name") String name) {
-        logger.info("Inside sayHello {} {}", "Hello",name);
+        logger.info("Inside sayHello {} {}", "Hello1",name);
         return new ResponseEntity<>(name, HttpStatus.OK);
     }
 }
